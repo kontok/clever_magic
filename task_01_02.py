@@ -1,6 +1,6 @@
 t = int(input())
 s = float(input())
-while t != 0 and s != 0:
+while t != 0 and s > 0.5:
     t -= 1
     s -= 0.5
 if t < s:
