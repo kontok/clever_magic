@@ -1,5 +1,6 @@
 def delete(chars, s):
-    s=str(s)
+    s=(str(s))
+    s=s.lower()
     for i in chars:
         if s.find(i):
             s = ''.join(s.split(i))
@@ -7,7 +8,6 @@ def delete(chars, s):
 def is_palindrom(s):
         p=True
         s = delete(' !?,.\'"', s)
-        print(s)
         a=0
         b=len(s)-1
         while a<b:
@@ -16,4 +16,4 @@ def is_palindrom(s):
             a +=1
             b -=1
         print (p)
-is_palindrom()
+

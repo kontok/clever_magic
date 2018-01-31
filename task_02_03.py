@@ -5,4 +5,3 @@ def average(lst):
 		s += x
 	y= round(s/d, 3)
 	print(y)
-average()
