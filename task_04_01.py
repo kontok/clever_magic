@@ -1,7 +1,6 @@
 n=int(input())
 p=int(input())
-f= open('data.txt', 'w+')
-f.write('48 48 3 75 26 57 53 21 71 15')
+f= open('data.txt', 'a+')
 f.seek(0)
 x=format(f.read()).split(' ')
 with open('out-1.txt', 'w') as o1:
