@@ -5,7 +5,7 @@ def delete(chars, s):
         if s.find(i):
             s = ''.join(s.split(i))
     return s
-def is_palindrom(s):
+def is_palindrome(s):
         p=True
         s = delete(' !?,.\'"', s)
         a=0
@@ -15,5 +15,5 @@ def is_palindrom(s):
                     p=False
             a +=1
             b -=1
-        print (p)
+        return (p)
 
