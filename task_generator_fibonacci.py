@@ -6,3 +6,4 @@ def fibonacci(n):
         yield x1
 
 
+фывфв
