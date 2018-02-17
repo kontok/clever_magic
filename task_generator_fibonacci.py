@@ -5,5 +5,3 @@ def fibonacci(n):
         x1, x2 = x2, x1+x2
         yield x1
 
-
-фывфв
