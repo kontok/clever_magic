@@ -1,6 +1,4 @@
-def get_free_land():
-    land = eval(input())
-    garden_bed = eval(input())
+def get_free_land(land, garden_bed):
     land_s = land[0]*land[1]*10
     if land_s == 0:
         raise ValueError("Не задана площадь участка")
@@ -18,4 +16,3 @@ def get_free_land():
         land_s -= garden_bed_s
     return land_s
 
-get_free_land()
