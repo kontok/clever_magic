@@ -1,5 +1,7 @@
 def get_free_land(land, garden_bed):
-    land_s = land[0]*land[1]*10
+    m = str(land[1])
+    m = float(m[0]) / float(m[2])
+    land_s = land[0]*m*10
     if land_s == 0:
         raise ValueError("Не задана площадь участка")
         
