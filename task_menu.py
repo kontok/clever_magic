@@ -17,12 +17,14 @@ class Menu(object):
 
     def __init__(self):
         self.num = 0
-    # где-то ниже умные мысли покинули мою голову...
     def __iter__(self):
+        self.__copy = self.__commands.copy()
         return self
 
     def __next__(self):
-        pass
+        while self.__copy:
+            return self.__copy.popitem()
+        raise StopIteration
 
     @classmethod
     def add_command(cls, name, klass):
