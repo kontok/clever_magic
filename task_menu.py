@@ -31,7 +31,7 @@ class Menu(object):
 
         if not name:
             raise CommandException('Command must have a name!')
-        elif not issubclass(klass, Comand):
+        elif not issubclass(klass, Command):
             raise CommandException('Class "{}" is not Command!'.format(klass))
 
         cls.types[name] = klass
